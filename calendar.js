@@ -21,6 +21,9 @@ function createDays() {
 
 function printDayOfMonth(initialDate, endDate) {
     for (var i = initialDate; i <= endDate; i++) {
-        document.getElementById('pos' + i).innerHTML = i;
+        var el = document.getElementById('pos' + i);
+        el.innerHTML = i;
+        if (i % 7 != 0 && (i - 1) % 7 != 0)
+            el.style.background = 'green';
     }
 }
