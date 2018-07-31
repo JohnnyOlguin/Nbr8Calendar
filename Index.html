@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="calendar.css">
     <title>Calendar data entry</title>
 </head>
+
 <body>
     <div class="container">
         <h2>Calendar control: input</h2>
@@ -17,7 +18,7 @@
             <div class="form-group form-inline">
                 <label for="startDate" class="control-label col-xs-2">Start Date:</label>
                 <div class="col-xs-10">
-                    <input type="text" class="form-control" id="startDate">
+                    <input type="date" class="form-control" id="startDate">
                 </div>
             </div>
             <div class="form-group  form-inline">
@@ -32,7 +33,135 @@
                     <input type="text" class="form-control" id="countryCode">
                 </div>
             </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10" onclick="renderCalendar()">
+                    <button class="btn btn-primary">Render</button>
+                </div>
+            </div>
         </form>
     </div>
+
+    <br>
+    <div class="calendar-month page-load" id="month">
+        <div class="calendar-week">
+            <div class="week-day">
+                <div class="content">S</div>
+            </div>
+            <div class="week-day">
+                <div class="content">M</div>
+            </div>
+            <div class="week-day">
+                <div class="content">T</div>
+            </div>
+            <div class="week-day">
+                <div class="content">W</div>
+            </div>
+            <div class="week-day">
+                <div class="content">T</div>
+            </div>
+            <div class="week-day">
+                <div class="content">F</div>
+            </div>
+            <div class="week-day">
+                <div class="content">S</div>
+            </div>
+        </div>
+        <div class="month-header">August</div>
+        <div class="calendar-week">
+            <div class="square">
+                <div class="content">23</div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+        </div>
+        <div class="calendar-week">
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+        </div>
+        <div class="calendar-week">
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+        </div>
+        <div class="calendar-week">
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+            <div class="square">
+                <div class="content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="calendar.js"></script>
 </body>
+
 </html>

@@ -2,3 +2,43 @@
     padding-top: 7px;
 }
 
+.calendar-month {
+    margin-left: 10%;
+    display: inline-grid;
+}
+
+.week-day {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.month-header {
+    width: 240px;
+    height: 25px;
+    background: lightgreen;
+    text-align: center;
+}
+
+.calendar-week {
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    background: lightgray;
+    text-align: center;
+    margin-right: 5px;
+}
+  
+.content {
+    font-size: 1em;
+    padding-top: 20%;
+}
+
+.page-load {
+    visibility: hidden
+}
